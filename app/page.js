@@ -1,13 +1,16 @@
 import Image from "next/image";
+import Navbar from "./Components/Navbar";
 import Container from "./Components/Container";
 import Button from "./Components/Button";
 import Card from "./Components/Card";
 import ContactForm from "./Components/ContactForm";
 import Footer from "./Components/Footer";
+import DrJuanHomeImage from "./assets/drjuanhome.png";
 
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <section>
         <h1 className="text-8xl font-bold">
           Dr. <br /> Juan David
@@ -18,6 +21,9 @@ export default function Home() {
           Dr. Juan-David Rivera-Del Valle LCSW, DSW
         </p>
         <Button />
+      </section>
+      <section>
+        <Image src={DrJuanHomeImage} />
       </section>
       <Container bgColor="darkBlue">
         <h2 className="text-7xl font-bold text-neutralPrimary">My Approach</h2>
