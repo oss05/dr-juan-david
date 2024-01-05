@@ -1,5 +1,10 @@
+import Image from "next/image";
 import Navbar from "../Components/Navbar";
 import Container from "../Components/Container";
+import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer";
+import Service1 from "../assets/psychoterapyservices.png";
+import Service2 from "../assets/clinicalsupervision.png";
 
 const Services = () => {
   return (
@@ -22,7 +27,7 @@ const Services = () => {
       </Container>
       <Container bgColor="darkBlue">
         <section>
-          <article>
+          <article className="flex">
             <div>
               <h3>Psychotherapy Services</h3>
               <p>
@@ -35,11 +40,13 @@ const Services = () => {
                 are 100% online.
               </p>
             </div>
-            <div></div>
+            <div>
+              <Image src={Service1} />
+            </div>
           </article>
         </section>
         <section>
-          <article>
+          <article className="flex flex-row-reverse">
             <div>
               <h3>Consultation and Clinical Supervision</h3>
               <p>
@@ -48,11 +55,16 @@ const Services = () => {
                 private practice.
               </p>
             </div>
-            <div></div>
+            <div>
+              <Image src={Service2} />
+            </div>
           </article>
         </section>
       </Container>
-      <Container bgColor="darkBlue">contact form</Container>
+      <Container bgColor="darkBlue">
+        <ContactForm />
+      </Container>
+      <Footer />
     </main>
   );
 };

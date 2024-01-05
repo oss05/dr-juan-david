@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
@@ -9,7 +11,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link href="/" class="mr-5 hover:text-gray-900">
-            <span class="text-xl">LOGO</span>
+            <Image src={Logo} />
           </Link>
           <Link href="/about" class="mr-5 hover:text-gray-900">
             About

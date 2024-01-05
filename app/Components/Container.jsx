@@ -1,5 +1,9 @@
-const Container = ({ children, bgColor }) => {
-  return <section className={`bg-${bgColor} px-10 py-14`}>{children}</section>;
+const Container = ({ children, bgColor, className }) => {
+  return (
+    <section className={`${bgColor} py-14`}>
+      <div className={`container mx-auto ${className}`}>{children}</div>
+    </section>
+  );
 };
 
 export default Container;
