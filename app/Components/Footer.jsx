@@ -7,13 +7,13 @@ const Footer = () => {
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <Image src={FooterImage} className="w-20 h-20" />
         <div>
-          <p class="text-sm text-neutralPrimary sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutralPrimary sm:py-2 sm:mt-0 mt-4">
+          <p class="text-sm text-neutralPrimary sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutralPrimary sm:py-2 sm:mt-0 mt-4 text-center md:text-left">
             Dr. Juan-David Rivera-Del Valle LCSW, DSW Licensed Clinical Social
-            Worker, Doctor of Social Work
+            Worker, Doctor of Social Work.
           </p>
-          <p class="text-sm text-neutralPrimary sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutralPrimary sm:py-2 sm:mt-0 mt-4">
+          <p class="text-sm text-neutralPrimary sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-neutralPrimary sm:py-2 sm:mt-0 mt-4 text-center md:text-left">
             Copyright © 2021 Dr. Juan-David Rivera-Del Valle LCSW, DSW  - All
-            Rights Reserved
+            Rights Reserved.
           </p>
         </div>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

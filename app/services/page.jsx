@@ -10,12 +10,12 @@ const Services = () => {
   return (
     <main>
       <Navbar />
-      <Container bgColor="darkBlue">
-        <h2 className="text-7xl font-bold text-neutralPrimary">Services</h2>
-        <h3 className="text-6xl font-bold text-neutralPrimary">
+      <Container bgColor="bg-neutralPrimary">
+        <h2 className="text-6xl md:text-7xl font-bold text-greige">Services</h2>
+        <h3 className="text-5xl md:text-6xl font-bold text-beige mt-11">
           Areas of Expertise
         </h3>
-        <p className="text-2xl mt-6 text-neutralPrimary">
+        <p className="text-2xl mt-6 text-greige">
           My professional experience includes psychotherapy with people of all
           ages along the spectrum of diagnoses and levels of symptom severity. I
           am a psychotherapist who has dedicated my life and clinical experience
@@ -25,40 +25,45 @@ const Services = () => {
           do my best to offer clients from all walks of life.
         </p>
       </Container>
-      <Container bgColor="darkBlue">
+      <Container bgColor="bg-neutralPrimary">
         <section>
-          <article className="flex">
-            <div>
-              <h3>Psychotherapy Services</h3>
-              <p>
+          <article className="flex flex-col md:flex-row-reverse">
+            <div className="w-full md:w-5/12 mr-8">
+              <h3 className="text-4xl md:text-5xl font-bold text-beige">
+                Psychotherapy <br /> Services
+              </h3>
+              <p className="text-2xl text-greige mt-5">
                 I offer psychodynamically informed, evidence-based, culturally
                 and gender-affirming psychotherapy for adults and partners of
-                all related structures. I work with Horizon Blue Cross and Blue
-                Shield, Cigna, Oscar, HealthUnited Healthcare, Oxford, Aetna,
-                and Optum through Headway. I also offer sliding scale fees based
-                on a thorough assessment of your financial situation. Sessions
-                are 100% online.
+                all related structures.
+                <br />
+                <br /> I work with Horizon Blue Cross and Blue Shield, Cigna,
+                Oscar, HealthUnited Healthcare, Oxford, Aetna, and Optum through
+                Headway. I also offer sliding scale fees based on a thorough
+                assessment of your financial situation. <br />
+                <br /> Sessions are 100% online.
               </p>
             </div>
-            <div>
+            <div className="w-full md:w-7/12">
               <Image src={Service1} />
             </div>
           </article>
         </section>
-        <section>
-          <article className="flex flex-row-reverse">
-            <div>
-              <h3>Consultation and Clinical Supervision</h3>
-              <p>
-                I am available for consultation services. I also offer clinical
-                supervision for aspiring LCSW’s and licensed clinicians in
-                private practice.
-              </p>
-            </div>
-            <div>
-              <Image src={Service2} />
-            </div>
-          </article>
+
+        <section className="flex flex-col md:flex-row justify-between mt-12">
+          <div className="w-full md:w-5/12 mr-8">
+            <h3 className="text-4xl md:text-5xl font-bold text-beige">
+              Consultation and <br /> Clinical Supervision
+            </h3>
+            <p className="text-2xl text-greige mt-5">
+              I am available for consultation services. I also offer clinical
+              supervision for aspiring LCSW’s and licensed clinicians in private
+              practice.
+            </p>
+          </div>
+          <div className="w-full md:w-7/12">
+            <Image src={Service2} className="w-full" />
+          </div>
         </section>
       </Container>
       <Container bgColor="darkBlue">

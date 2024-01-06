@@ -4,16 +4,16 @@ import ContactFormImage from "../assets/contactform.png";
 const ContactForm = () => {
   return (
     <section className="drop-shadow-[0_5px_20px_rgba(0,0,0,0.25)] rounded-xl">
-      <div className="lg:w-full md:w-1/2 bg-white flex md:ml-auto w-full md:mt-0 rounded-lg">
-        <div className=" w-7/12 h-full rounded-lg">
+      <div className="lg:w-full md:w-1/2 bg-white flex flex-col md:flex-row md:ml-auto w-full md:mt-0 rounded-lg">
+        <div className="w-full md:w-7/12 h-full rounded-lg">
           <Image src={ContactFormImage} className="w-full h-full" />
         </div>
-        <div className="lg:w-5/12 bg-white flex flex-col justify-center md:ml-auto w-full rounded-lg mt-8 md:mt-0 px-10">
+        <div className="lg:w-5/12 bg-white flex flex-col justify-center md:ml-auto w-full rounded-lg py-8 md:py-0 md:mt-8 px-10">
           <h2 className="text-darkBlue text-4xl mb-1 font-medium title-font">
             Contact Form
           </h2>
           <p className="leading-relaxed mt-2 mb-5 text-gray-600">
-            Let's get in touch or get you appointment
+            Let's get in touch or get your appointment.
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-darkBlue">

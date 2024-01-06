@@ -51,7 +51,7 @@ const FAQs = () => {
 
   return (
     <section className="">
-      <div className="container px-6 py-10 mx-auto">
+      <div className="container py-10 mx-auto">
         <hr className="my-6 border-gray-200 dark:border-gray-700" />
         <div>
           <div>
@@ -59,7 +59,9 @@ const FAQs = () => {
               className="flex items-center justify-between w-full focus:outline-none px-4"
               onClick={() => handleFaqs("first")}
             >
-              <h2 className="text-4xl font-bold text-beige">Session fees</h2>
+              <h2 className="md:mx-4 text-4xl font-bold text-beige text-left">
+                Session fees
+              </h2>
               {faqs.first ? plusIcon : lessIcon}
             </button>
             {faqs.first && (
@@ -76,7 +78,9 @@ const FAQs = () => {
               className="flex items-center justify-between w-full focus:outline-none px-4"
               onClick={() => handleFaqs("second")}
             >
-              <h2 className="mx-4 text-4xl font-bold text-beige">Insurance</h2>
+              <h2 className="md:mx-4 text-4xl font-bold text-beige text-left">
+                Insurance
+              </h2>
               {faqs.second ? plusIcon : lessIcon}
             </button>
             {faqs.second && (
@@ -95,7 +99,7 @@ const FAQs = () => {
               className="flex items-center justify-between w-full focus:outline-none px-4"
               onClick={() => handleFaqs("third")}
             >
-              <h2 className="mx-4 text-4xl font-bold text-beige">
+              <h2 className="md:mx-4 text-4xl font-bold text-beige text-left">
                 Sliding scale
               </h2>
               {faqs.third ? plusIcon : lessIcon}
@@ -118,7 +122,7 @@ const FAQs = () => {
               className="flex items-center justify-between w-full focus:outline-none px-4"
               onClick={() => handleFaqs("fourth")}
             >
-              <h2 className="mx-4 text-4xl font-bold text-beige">
+              <h2 className="md:mx-4 text-4xl font-bold text-beige text-left">
                 Cancelation fees
               </h2>
               {faqs.fourth ? plusIcon : lessIcon}
