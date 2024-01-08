@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.timeless {
+  font-family: var(--font-timeless);
+}
+
+.quicksand {
+  font-family: var(--font-quicksand);
+}

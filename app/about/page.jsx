@@ -11,13 +11,15 @@ const About = () => {
     <main>
       <Navbar />
       <Container bgColor="darkBlue">
-        <h2 className="text-6xl md:text-7xl font-bold text-greige">About</h2>
+        <h2 className="text-6xl md:text-7xl font-bold text-greige timeless">
+          About
+        </h2>
         <section className="flex flex-col md:flex-row mt-11">
           <article className="w-full md:w-9/12 mr-16">
-            <h3 className="text-5xl md:text-6xl font-bold text-neutralSecondary">
+            <h3 className="text-5xl md:text-6xl font-bold text-neutralSecondary timeless">
               My Background
             </h3>
-            <p className="text-2xl mt-6 text-greige">
+            <p className="text-2xl mt-6 text-greige quicksand leading-relaxed">
               I'm a bilingual Latinx clinician with extensive education and
               clinical experience as a psychotherapist and social worker. I hold
               a Bachelor of Science degree from New York University, a Master of
@@ -32,10 +34,10 @@ const About = () => {
           </article>
         </section>
         <div className="mt-11">
-          <h3 className="text-5xl md:text-6xl font-bold text-neutralSecondary">
+          <h3 className="text-5xl md:text-6xl font-bold text-neutralSecondary timeless">
             My Style
           </h3>
-          <p className="text-2xl mt-6 text-greige">
+          <p className="text-2xl mt-6 text-greige quicksand leading-relaxed">
             Clients often describe our sessions as conversations with a caring,
             knowledgeable friend—one who "keeps it real" and offers expertise in
             behavioral health. However, my focus is on you, your goals, and
