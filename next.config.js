@@ -5,6 +5,10 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    loader: "imgix",
+    path: "./app/assets/",
+  },
 };
 
 module.exports = nextConfig;
