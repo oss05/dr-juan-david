@@ -19,12 +19,15 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Container className="pb-0">
-        <section className="flex w-full h-[calc(100vh-200px)]">
-          <article className="flex flex-col md:pl-20 w-full md:w-6/12">
-            <h1 className="text-8xl font-bold text-gray timeless">
+      <Container className="lg:pb-0">
+        <section className="flex w-full lg:h-[calc(100vh-200px)]">
+          <article className="flex flex-col lg:pl-20 w-full lg:w-6/12">
+            <h1 className="text-7xl lg:text-8xl font-bold text-gray mb-4 lg:mb-0 timeless">
               Dr. <br /> Juan David
             </h1>
+            <article className="bg-paleBlue w-flex flex justify-end md:hidden">
+              <Image src={DrJuanHomeImage} />
+            </article>
             <p className="text-2xl mt-7 tracking-[0.39px] leading-relaxed quicksand">
               "It is time to decolonize therapy, people deserve a safe space
               affirmative of their unique individual intersectionality." <br />
@@ -33,12 +36,12 @@ export default function Home() {
             <button
               type="submit"
               onClick={executeScroll}
-              className="text-white bg-darkBlue md:ml-20 border-0 py-5 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-7 w-80 mx-auto timeless"
+              className="text-white bg-darkBlue lg:ml-20 border-0 py-5 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-7 w-80 mx-auto timeless"
             >
               Contact me
             </button>
           </article>
-          <article className="bg-paleBlue w-full md:w-9/12 flex justify-end absolute top-52 md:top-0 right-0 -z-10">
+          <article className="bg-paleBlue w-9/12 md:flex justify-end absolute top-52 md:top-0 right-0 -z-10 hidden">
             <Image src={DrJuanHomeImage} />
           </article>
         </section>
@@ -47,10 +50,10 @@ export default function Home() {
       <Container
         bgColor="bg-darkBlue"
         bg="bg-[url('./assets/herobackground.png')]"
-        className="flex flex-col md:flex-row gap-8"
+        className="flex flex-col lg:flex-row gap-8"
       >
-        <section className="w-full md:w-9/12">
-          <h2 className="text-6xl md:text-7xl font-bold text-neutralPrimary timeless">
+        <section className="w-full lg:w-9/12">
+          <h2 className="text-6xl lg:text-7xl font-bold text-neutralPrimary timeless">
             My Approach
           </h2>
           <p className="text-2xl mt-7 text-neutralPrimary tracking-[0.39px] leading-relaxed pr-8 quicksand">
@@ -65,16 +68,16 @@ export default function Home() {
             me on this journey of understanding, healing, and growth.
           </p>
         </section>
-        <section className="w-full md:w-3/12 flex items-end">
+        <section className="w-full lg:w-3/12 flex items-end">
           <Image src={MyApproachImage} className="w-full" />
         </section>
       </Container>
 
       <Container className="pb-12">
-        <h2 className="text-6xl md:text-7xl font-bold text-greige timeless">
+        <h2 className="text-6xl lg:text-7xl font-bold text-greige timeless">
           Services
         </h2>
-        <div className="flex flex-col md:flex-row justify-between mt-14 gap-16">
+        <div className="flex flex-col lg:flex-row justify-between mt-6 lg:mt-14 gap-8 lg:gap-16">
           <Card bg="bg-[url('./assets/psychoterapyservicescard.png')]" />
           <Card bg="bg-[url('./assets/clinicalsupervisioncard.png')]" />
         </div>
@@ -91,7 +94,7 @@ export default function Home() {
       </Container>
 
       <Container bgColor="bg-neutralPrimary">
-        <h2 className="text-6xl md:text-7xl font-bold text-greige timeless">
+        <h2 className="text-6xl lg:text-7xl font-bold text-greige timeless">
           FAQs
         </h2>
         <FAQs />

@@ -46,7 +46,7 @@ const Services = () => {
                 <br /> Sessions are 100% online.
               </p>
             </div>
-            <div className="w-full md:w-7/12">
+            <div className="w-full mt-4 md:mt-0 md:w-7/12">
               <Image src={Service1} />
             </div>
           </article>
@@ -63,7 +63,7 @@ const Services = () => {
               in private practice.
             </p>
           </div>
-          <div className="w-full md:w-7/12">
+          <div className="w-full mt-4 md:mt-0 md:w-7/12">
             <Image src={Service2} className="w-full" />
           </div>
         </section>

@@ -8,7 +8,7 @@ const ReferenceCard = ({ title, link }) => {
         <a href={link} target="_blank">
           <button
             type="submit"
-            className="text-neutralPrimary border border-neutralPrimary border-3 py-5 px-6 focus:outline-none rounded-lg text-4xl mt-7 w-80 mx-auto timeless"
+            className="text-neutralPrimary border border-neutralPrimary border-3 py-5 px-6 focus:outline-none rounded-lg text-4xl mt-7 w-full  mx-auto timeless"
           >
             See more
           </button>

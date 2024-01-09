@@ -29,7 +29,7 @@ const About = () => {
               their search for answers.
             </p>
           </article>
-          <article className="w-full md:w-3/12 md:-mt-32">
+          <article className="w-full mt-4 md:w-3/12 md:-mt-32">
             <Image src={AboutImage} />
           </article>
         </section>
