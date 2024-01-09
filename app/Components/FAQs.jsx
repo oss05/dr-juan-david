@@ -87,8 +87,7 @@ const FAQs = () => {
               <div className="flex mt-8 md:mx-10">
                 <p className="max-w-3xl px-4 text-beige text-2xl font-bold timeless">
                   I work with Horizon Blue Cross and Blue Shield, Cigna, Oscar,
-                  HealthUnited Healthcare, Oxford, Aetna, Optum, Headway, and
-                  Alma.
+                  HealthUnited Healthcare, Oxford, Aetna, and Optum.
                 </p>
               </div>
             )}

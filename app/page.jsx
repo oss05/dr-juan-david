@@ -78,8 +78,16 @@ export default function Home() {
           Services
         </h2>
         <div className="flex flex-col lg:flex-row justify-between mt-6 lg:mt-14 gap-8 lg:gap-16">
-          <Card bg="bg-[url('./assets/psychoterapyservicescard.png')]" />
-          <Card bg="bg-[url('./assets/clinicalsupervisioncard.png')]" />
+          <Card
+            bg="bg-[url('./assets/psychoterapyservicescard.png')]"
+            title="Psychotherapy Services"
+            description="Online psychotherapy for adults, inclusive of diverse identities."
+          />
+          <Card
+            bg="bg-[url('./assets/clinicalsupervisioncard.png')]"
+            title="Consultation Services"
+            description="Consultation services are available for psychotherapists and organizations."
+          />
         </div>
         <div className="flex justify-center w-full">
           <Link href="/services">
