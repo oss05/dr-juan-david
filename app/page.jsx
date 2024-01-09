@@ -22,7 +22,7 @@ export default function Home() {
       <Container className="lg:pb-0">
         <section className="flex w-full lg:h-[calc(100vh-200px)]">
           <article className="flex flex-col lg:pl-20 w-full lg:w-6/12">
-            <h1 className="text-7xl lg:text-8xl font-bold text-gray mb-4 lg:mb-0 timeless">
+            <h1 className="text-6xl lg:text-8xl font-bold text-gray mb-4 lg:mb-0 timeless">
               Dr. <br /> Juan David
             </h1>
             <article className="bg-paleBlue w-flex flex justify-end md:hidden">
@@ -85,7 +85,7 @@ export default function Home() {
           <Link href="/services">
             <button
               type="submit"
-              className="text-white bg-darkBlue border-0 py-5 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-12 w-96 mx-auto timeless"
+              className="text-white bg-darkBlue border-0 py-5 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-12 w-80 md:w-96 mx-auto timeless"
             >
               See more
             </button>

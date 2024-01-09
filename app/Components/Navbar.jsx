@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <Link
             href="/services"
-            class="mt-6 md:mt-0 mr-14 text-darkBlue text-xl md:text-[16px] font-bold underline quicksand tracking-[6.33px] order-2 sm:order-1"
+            class="mt-6 md:mt-0 mr-8 md:mr-14 text-darkBlue text-xl md:text-[16px] font-bold underline quicksand tracking-[6.33px] order-2 sm:order-1"
           >
             SERVICES
           </Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/about"
-            class="mt-6 md:mt-0 ml-14 text-darkBlue text-xl md:text-[16px] font-bold underline quicksand tracking-[6.33px] order-3"
+            class="mt-6 md:mt-0 ml-8 md:ml-14 text-darkBlue text-xl md:text-[16px] font-bold underline quicksand tracking-[6.33px] order-3"
           >
             ABOUT
           </Link>
