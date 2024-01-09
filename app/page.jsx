@@ -9,7 +9,7 @@ import FAQs from "./Components/FAQs";
 import ContactForm from "./Components/ContactForm";
 import Footer from "./Components/Footer";
 import DrJuanHomeImage from "./assets/drjuanhome.png";
-import MyApproachImage from "./assets/heroImage.png";
+import MyApproachImage from "./assets/heroimage.png";
 
 export default function Home() {
   const myRef = useRef(null);
