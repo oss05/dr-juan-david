@@ -58,9 +58,18 @@ const About = () => {
         <section class="text-gray-600 body-font">
           <div class="container mx-auto">
             <div class="flex flex-col md:flex-row gap-8">
-              <ReferenceCard />
-              <ReferenceCard />
-              <ReferenceCard />
+              <ReferenceCard
+                title="Psychology Today Profile"
+                link="https://www.psychologytoday.com/us/therapists/juan-david-rivera-del-valle-woodside-ny/296173"
+              />
+              <ReferenceCard
+                title="Manhattan Alternative Profile"
+                link="https://www.manhattanalternative.com/team/dr-juan-david-rivera-del-vale/"
+              />
+              <ReferenceCard
+                title="Kink Aware Professionals"
+                link="https://www.kapprofessionals.org/kap_directory/15673/juan-david-rivera-del-valle-lcsw/"
+              />
             </div>
           </div>
         </section>

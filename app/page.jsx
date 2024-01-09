@@ -1,7 +1,9 @@
+"use client";
+import { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "./Components/Navbar";
 import Container from "./Components/Container";
-import Button from "./Components/Button";
 import Card from "./Components/Card";
 import FAQs from "./Components/FAQs";
 import ContactForm from "./Components/ContactForm";
@@ -10,13 +12,17 @@ import DrJuanHomeImage from "./assets/drjuanhome.png";
 import MyApproachImage from "./assets/heroImage.png";
 
 export default function Home() {
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView();
+
   return (
     <main>
       <Navbar />
       <Container className="pb-0">
         <section className="flex w-full h-[calc(100vh-200px)]">
-          <article className="flex flex-col pl-20 w-6/12">
-            <h1 className="text-8xl font-bold timeless">
+          <article className="flex flex-col md:pl-20 w-full md:w-6/12">
+            <h1 className="text-8xl font-bold text-gray timeless">
               Dr. <br /> Juan David
             </h1>
             <p className="text-2xl mt-7 tracking-[0.39px] leading-relaxed quicksand">
@@ -26,12 +32,13 @@ export default function Home() {
             </p>
             <button
               type="submit"
-              className="text-white bg-darkBlue ml-20 border-0 py-5 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-7 w-80 mx-auto timeless"
+              onClick={executeScroll}
+              className="text-white bg-darkBlue md:ml-20 border-0 py-5 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-7 w-80 mx-auto timeless"
             >
               Contact me
             </button>
           </article>
-          <article className="bg-paleBlue w-9/12 flex justify-end absolute top-0 right-0 -z-10">
+          <article className="bg-paleBlue w-full md:w-9/12 flex justify-end absolute top-52 md:top-0 right-0 -z-10">
             <Image src={DrJuanHomeImage} />
           </article>
         </section>
@@ -63,13 +70,23 @@ export default function Home() {
         </section>
       </Container>
 
-      <Container className="pb-20">
+      <Container className="pb-12">
         <h2 className="text-6xl md:text-7xl font-bold text-greige timeless">
           Services
         </h2>
         <div className="flex flex-col md:flex-row justify-between mt-14 gap-16">
           <Card bg="bg-[url('./assets/psychoterapyservicescard.png')]" />
           <Card bg="bg-[url('./assets/clinicalsupervisioncard.png')]" />
+        </div>
+        <div className="flex justify-center w-full">
+          <Link href="/services">
+            <button
+              type="submit"
+              className="text-white bg-darkBlue border-0 py-5 focus:outline-none hover:bg-indigo-600 rounded-lg text-4xl mt-12 w-96 mx-auto timeless"
+            >
+              See more
+            </button>
+          </Link>
         </div>
       </Container>
 
@@ -81,7 +98,9 @@ export default function Home() {
       </Container>
 
       <Container>
-        <ContactForm />
+        <div ref={myRef}>
+          <ContactForm />
+        </div>
       </Container>
 
       <Footer />

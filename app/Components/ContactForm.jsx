@@ -33,7 +33,7 @@ const ContactForm = () => {
         <div className="w-full md:w-7/12 h-full rounded-lg">
           <Image src={ContactFormImage} className="w-full h-full" />
         </div>
-        <div className="lg:w-5/12 bg-white flex flex-col justify-center md:ml-auto w-full rounded-lg py-8 md:py-0 md:mt-8 px-10">
+        <div className="lg:w-5/12 bg-white flex flex-col justify-center md:ml-auto w-full rounded-lg py-8 md:py-0  px-10">
           <h2 className="text-darkBlue text-4xl mb-1 font-medium title-font quicksand">
             Contact Form
           </h2>
