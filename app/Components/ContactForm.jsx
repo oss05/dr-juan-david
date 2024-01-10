@@ -41,7 +41,7 @@ const ContactForm = () => {
             Contact Form
           </h2>
           <p className="leading-relaxed mt-2 mb-5 text-gray-600 quicksand">
-            Let's get in touch or get your appointment.
+            Let's get in touch.
           </p>
           <form ref={form} onSubmit={sendEmail}>
             <div className="relative mb-4">
