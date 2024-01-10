@@ -26,7 +26,7 @@ export default function Home() {
               Dr. <br /> Juan David
             </h1>
             <article className="bg-paleBlue w-flex flex justify-end md:hidden">
-              <Image src={DrJuanHomeImage} />
+              <Image src={DrJuanHomeImage} alt="Dr Juan image" />
             </article>
             <p className="text-2xl mt-7 tracking-[0.39px] leading-relaxed quicksand">
               "It is time to decolonize therapy, people deserve a safe space
@@ -42,7 +42,7 @@ export default function Home() {
             </button>
           </article>
           <article className="bg-paleBlue w-9/12 md:flex justify-end absolute top-52 md:top-0 right-0 -z-10 hidden">
-            <Image src={DrJuanHomeImage} />
+            <Image src={DrJuanHomeImage} alt="Dr juan image" />
           </article>
         </section>
       </Container>
@@ -69,7 +69,11 @@ export default function Home() {
           </p>
         </section>
         <section className="w-full lg:w-3/12 flex items-end">
-          <Image src={MyApproachImage} className="w-full" />
+          <Image
+            src={MyApproachImage}
+            className="w-full"
+            alt="approach image"
+          />
         </section>
       </Container>
 

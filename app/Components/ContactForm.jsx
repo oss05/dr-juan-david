@@ -1,10 +1,17 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import ContactFormImage from "../assets/contactform.jpg";
 
 const ContactForm = () => {
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -19,12 +26,29 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
+          setSuccessMessage("Message sent successfully.");
+          setFormData({
+            user_name: "",
+            user_email: "",
+            message: "",
+          });
+          setTimeout(() => {
+            setSuccessMessage("");
+          }, 5000);
           console.log(result.text);
         },
         (error) => {
+          setErrorMessage("An error occurred, try again.");
           console.log(error.text);
         }
       );
+  };
+
+  const handleData = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   return (
@@ -33,7 +57,8 @@ const ContactForm = () => {
         <div className="w-full md:w-7/12 h-full rounded-lg">
           <Image
             src={ContactFormImage}
-            className="w-full h-full rounded-t-lg md:rounded-tr-none md:rounded-s-lg "
+            className="w-full h-full rounded-t-lg md:rounded-tr-none md:rounded-s-lg"
+            alt="contact image"
           />
         </div>
         <div className="lg:w-5/12 bg-white flex flex-col justify-center md:ml-auto w-full rounded-lg py-8  px-10">
@@ -55,6 +80,8 @@ const ContactForm = () => {
                 type="text"
                 id="name"
                 name="user_name"
+                value={formData.user_name}
+                onChange={handleData}
                 className="w-full bg-white rounded-lg border border-paleBlue focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-darkBlue py-1 px-3 leading-8 transition-colors duration-200 ease-in-out h-12"
               />
             </div>
@@ -69,6 +96,8 @@ const ContactForm = () => {
                 type="email"
                 id="email"
                 name="user_email"
+                value={formData.user_email}
+                onChange={handleData}
                 className="w-full bg-white rounded-lg border border-paleBlue focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-darkBlue py-1 px-3 leading-8 transition-colors duration-200 ease-in-out h-12"
               />
             </div>
@@ -82,10 +111,17 @@ const ContactForm = () => {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleData}
                 className="w-full bg-white rounded-lg border border-paleBlue  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                defaultValue={""}
               />
-            </div>
+            </div>{" "}
+            {successMessage && (
+              <p className="mb-5 text-center text-success">{successMessage}</p>
+            )}
+            {errorMessage && (
+              <p className="mb-5 text-center text-error">{errorMessage}</p>
+            )}
             <button
               type="submit"
               className="text-white bg-darkBlue w-full border-0 py-3 px-6 focus:outline-none hover:bg-indigo-600 rounded-lg text-lg quicksand"

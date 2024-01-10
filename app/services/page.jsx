@@ -47,7 +47,7 @@ const Services = () => {
               </p>
             </div>
             <div className="w-full mt-4 md:mt-0 md:w-7/12">
-              <Image src={Service1} />
+              <Image src={Service1} alt="Psychotherapy" />
             </div>
           </article>
         </section>
@@ -64,7 +64,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-full mt-4 md:mt-0 md:w-7/12">
-            <Image src={Service2} className="w-full" />
+            <Image src={Service2} className="w-full" alt="Consultation" />
           </div>
         </section>
       </Container>

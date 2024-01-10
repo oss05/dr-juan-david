@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </article>
           <article className="w-full mt-4 md:w-3/12 md:-mt-32">
-            <Image src={AboutImage} />
+            <Image src={AboutImage} alt="about image" />
           </article>
         </section>
         <div className="mt-11">
@@ -55,9 +55,9 @@ const About = () => {
         </div>
       </Container>
       <Container className="py-7">
-        <section class="text-gray-600 body-font">
-          <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row gap-8">
+        <section className="text-gray-600 body-font">
+          <div className="container mx-auto">
+            <div className="flex flex-col md:flex-row gap-8">
               <ReferenceCard
                 title="Psychology Today Profile"
                 link="https://www.psychologytoday.com/us/therapists/juan-david-rivera-del-valle-woodside-ny/296173"

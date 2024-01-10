@@ -16,6 +16,8 @@ module.exports = {
       white: "#FFFFFF",
       black: "#000",
       gray: "#353535",
+      success: "#49ba20",
+      error: "#eb4034",
     },
     extend: {
       backgroundImage: {
