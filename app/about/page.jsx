@@ -20,9 +20,9 @@ const About = () => {
               My Background
             </h3>
             <p className="text-2xl mt-6 text-greige quicksand leading-relaxed">
-              I'm a bilingual Latinx clinician with extensive education and
-              clinical experience as a psychotherapist and social worker. I hold
-              a Bachelor of Science degree from New York University, a Master of
+              I'm a Latinx clinician with extensive education and clinical
+              experience as a psychotherapist and social worker. I hold a
+              Bachelor of Science degree from New York University, a Master of
               Science degree from Columbia University, and a Doctor of Social
               Work degree from the University of Southern California. Trained in
               various psychotherapeutic techniques, I aim to guide clients in
